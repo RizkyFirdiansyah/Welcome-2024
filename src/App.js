@@ -23,14 +23,15 @@ function App() {
       <Particles
         init={particleInit}
         options={{ preset: "fireworks" }}
+
       />
 
       <div className="flex flex-col justify-center items-center min-h-screen gap-4">
         <span className="text-white text-5xl font-bold px-4 z-40">
           <Typewriter words={newYearMessage} loop={false} cursorStyle="_" cursor />
         </span>
-        <div className="text-white font-bold text-3xl z-50 ">
-          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["YEAYYYY...", "HAPPY NEW YEAR 2024"])} />
+        <div className="text-white font-bold text-3xl z-50 text-center">
+          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["YEAYYYY...", "Welcome 2024"])} />
         </div>
       </div>
     </>
